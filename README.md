@@ -1,3 +1,6 @@
+
+this is loned from github using 
+git clone https://github.com/onemanarmy1032-code/n8n-nodes-sms.git
 #add the following commands to command line one by one
 
 npm i
@@ -7,7 +10,6 @@ npm install n8n -g             # install n8n globally
 cd %USERPROFILE%  
 mkdir .n8n\custom              # create folder for custom nodes  
 
-git clone https://github.com/onemanarmy1032-code/n8n-nodes-sms.git  # clone your repo  
 cd n8n-nodes-sms  
 
 npm install                   # install dependencies  
