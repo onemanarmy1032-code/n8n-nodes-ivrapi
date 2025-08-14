@@ -4,9 +4,9 @@ import {
 	INodeProperties,
 } from 'n8n-workflow';
 
-export class SmsApi implements ICredentialType {
-	name = 'smsApi';
-	displayName = 'SMS API';
+export class ivrapiApi implements ICredentialType {
+	name = 'ivrapiApi';
+	displayName = 'IVR API';
 	documentationUrl = 'https://betaapi.ivrapi.com/docs#/SMS-y/SmsController_sendMessage';
 	properties: INodeProperties[] = [
 		{

@@ -1,8 +1,7 @@
- {
-  "name": "n8n-nodes-sms",
-  "version": "0.1.0",
-  "description": "n8n community node for SMS API integration",
-  
+{
+  "name": "n8n-nodes-ivrapi",
+  "version": "0.1.1",
+  "description": "n8n community node for ivrapi API integration",
   "keywords": [
     "n8n-community-node-package"
   ],
@@ -14,31 +13,32 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sid/n8n-nodes-sms.git"
+    "url": "https://github.com/sid/n8n-nodes-ivrapi.git"
   },
   "main": "index.js",
   "scripts": {
-    "build": "tsc && gulp build:icons",
+    "build": "tsc && cpx \"ivrapi/*.svg\" dist/ivrapi",
     "dev": "tsc --watch",
-    "format": "prettier Sms/**/*.ts credentials/**/*.ts --write",
-    "lint": "eslint Sms/**/*.ts credentials/**/*.ts package.json",
-   "lintfix": "eslint Sms/**/*.ts credentials/**/*.ts package.json --fix",
-    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js Sms/**/*.ts credentials/**/*.ts package.json"
+    "format": "prettier ivrapi/**/*.ts credentials/**/*.ts --write",
+    "lint": "eslint ivrapi/**/*.ts credentials/**/*.ts package.json",
+    "lintfix": "eslint ivrapi/**/*.ts credentials/**/*.ts package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js ivrapi/**/*.ts credentials/**/*.ts package.json"
   },
   "files": [
     "dist"
   ],
   "n8n": {
-  "n8nNodesApiVersion": 1,
-  "credentials": [
-    "dist/credentials/SmsApi.credentials.js"
-  ],
-  "nodes": [
-    "dist/Sms/sms.node.js"
-  ]
-},
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ivrapiApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/ivrapi/ivrapi.node.js"
+    ]
+  },
   "devDependencies": {
     "@typescript-eslint/parser": "~5.45",
+    "cpx": "^1.5.0",
     "eslint-plugin-n8n-nodes-base": "^1.11.0",
     "gulp": "^4.0.2",
     "n8n-workflow": "*",

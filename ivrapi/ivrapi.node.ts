@@ -1,22 +1,22 @@
 import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow';
 
-export class Sms implements INodeType {
+export class ivrapi implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'SMS',
-		name: 'sms',
-		icon: 'file:sms.svg',
+		displayName: 'ivrapi',
+		name: 'ivrapi',
+		icon: 'file:ivrapi.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
-		description: 'Sending SMS Message',
+		description: 'BETA IVRAPI',
 		defaults: {
-			name: 'SMS',
+			name: 'IVRAPI',
 		},
 		inputs: [NodeConnectionType.Main],
 		outputs: [NodeConnectionType.Main],
 		credentials: [
 			{
-				name: 'smsApi',
+				name: 'ivrapiApi',
 				required: true,
 			},
 		],
