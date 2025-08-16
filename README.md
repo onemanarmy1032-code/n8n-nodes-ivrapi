@@ -1,64 +1,51 @@
-# n8n-nodes-ivrapi
+# n8n-ivrapi-community-nodes
 
-**IVRAPI** is an SMS and phone calling service API.  
-This n8n community node allows you to integrate IVRAPI into your n8n workflows for sending SMS messages and making phone calls directly from n8n.
+This is an n8n community node for IVRAPI — an SMS and phone calling service API.
+It allows you to integrate IVRAPI into your n8n workflows to send SMS messages and make phone calls directly within your automation processes.
 
----
-
-## Features
-- Send SMS messages through IVRAPI
-- Initiate automated phone calls
-- Use in combination with other n8n nodes for powerful workflows
-- Open-source and easy to customize
-
----
+n8n is a fair-code licensed workflow automation platform.
 
 ## Installation
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) version **>=20.19 and <=24.x**
-- [npm](https://www.npmjs.com/get-npm)
-- [n8n](https://n8n.io) installed globally
+Follow the n8n community node installation guide, or use the steps below.
 
-### Steps
+## Operations
 
-Run the following commands in your terminal (Windows PowerShell):
+This node currently supports:
 
-```bash
-# Install n8n globally (if not already installed)
-npm install n8n -g
+Send SMS – Send text messages via IVRAPI.
 
-# Go to your user home directory
-cd %USERPROFILE%
+## Credentials
 
-# Create custom node folder for n8n
-mkdir .n8n\custom
+Before using the node, you’ll need an IVRAPI account and API key.
 
-# Navigate to the custom folder
-cd .n8n\custom
+Setup:
 
-# Clone the IVRAPI node from GitHub
-git clone https://github.com/onemanarmy1032-code/n8n-nodes-ivrapi.git
+Sign up at IVRAPI.
 
-# Enter the project folder
-cd n8n-nodes-ivrapi
+Go to your account dashboard and find your API key.
 
-# Install dependencies
-npm install
+In n8n, add new credentials for IVRAPI API and paste your key.
 
-# Build the project
-npm run build
+## Compatibility
 
-# Link the package globally
-npm link
+Minimum n8n version: 1.0.0
 
-# Go back to the custom folder
-cd .. 
+Tested with Node.js 20.x and n8n 1.x
 
-# Link the package to n8n
-npm link n8n-nodes-ivrapi
+No known compatibility issues.
 
-# Start n8n
-n8n start
-"# n8n-nodes-ivrapi" 
-"# n8n-nodes-ivrapi" 
+## Usage
+
+Once installed, the IVRAPI node will appear in your n8n node list.
+Drag it into your workflow, connect your trigger or data source, select the operation (Send SMS or Make Call), and configure the input fields.
+
+## Resources
+
+n8n Community Nodes Documentation
+
+IVRAPI API Documentation
+
+## Version History
+
+0.1.0 – Initial release with SMS functionality.

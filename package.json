@@ -1,20 +1,21 @@
 {
-  "name": "n8n-nodes-ivrapi",
-  "version": "0.1.1",
+  "name": "n8n-ivrapi-community-nodes",
+  "version": "0.1.0",
   "description": "n8n community node for ivrapi API integration",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/advicospoland-ai/n8n-ivrapi-community-nodes#readme",
   "author": {
     "name": "oneman",
     "email": "onemanarmy1032@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sid/n8n-nodes-ivrapi.git"
+    "url": "https://github.com/advicospoland-ai/n8n-ivrapi-community-nodes.git"
   },
+  
   "main": "index.js",
   "scripts": {
     "build": "tsc && cpx \"ivrapi/*.svg\" dist/ivrapi",

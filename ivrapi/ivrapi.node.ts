@@ -49,13 +49,13 @@ export class ivrapi implements INodeType {
 									from: '={{$parameter.from}}',
 									to: '={{$parameter.to}}',
 									message: '={{$parameter.message}}',
-									clientId: '={{$parameter.clientId}}',
 								},
 							},
 						},
 					},
 				],
-				default: '',
+				default: 'Send SMS',
+				description: 'The operation to perform',
 			},
 			{
 				displayName: 'From',
@@ -90,17 +90,7 @@ export class ivrapi implements INodeType {
 					},
 				},
 			},
-			{
-				displayName: 'Client ID',
-				name: 'clientId',
-				type: 'number',
-				default: 0,
-				displayOptions: {
-					show: {
-						operation: ['send'],
-					},
-				},
-			},
+			
 		],
 	};
 }
